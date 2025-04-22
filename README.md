@@ -50,7 +50,12 @@ cd CP-Bench
 
 ## Running CP-Bench
 
-For a quick run, activate your conda environment and execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed):
+For a quick run, activate your conda environment and execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed).
+
+Note, you might've installed different versions of PyTorch or CUDA, so the ref log to compare against distributed SDC checking is not applicable to your case.
+
+Note, you need to adjust parameters such as batch_size to avoid CUDA out of memory errors.
+
 ```
 conda activate [your-env-name]
 ./run_model.sh
@@ -73,9 +78,6 @@ export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode concur
 # Distributed mode: All GPUs run together for one model.
 export NCCL_DEBUG=0 && export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode distributed --batch_size 24 --models "llama" --precision "float32" --sdc_check 1 --random_seed 1 --duration 10000 --num_steps 1000000 |tee run_distributed_llama.log
 ```
-
-Note, you need to adjust parameters such as batch_size to avoid CUDA out of memory errors.
-Note, you might've installed different versions of PyTorch or CUDA, so the ref log to compare against distributed SDC checking is not applicable to your case.
 
 ## Real-World Use Cases
 We have used CP-Bench detecting real-world SDCs and Perf Throttling of GPUs.
