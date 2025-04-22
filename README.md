@@ -74,7 +74,8 @@ export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode concur
 export NCCL_DEBUG=0 && export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode distributed --batch_size 24 --models "llama" --precision "float32" --sdc_check 1 --random_seed 1 --duration 10000 --num_steps 1000000 |tee run_distributed_llama.log
 ```
 
-Note that you need to adjust parameters such as batch_size to avoid CUDA out of memory errors.
+Note, you need to adjust parameters such as batch_size to avoid CUDA out of memory errors.
+Note, you might've installed different versions of PyTorch or CUDA, so the ref log to compare against distributed SDC checking is not applicable to your case.
 
 ## Real-World Use Cases
 We have used CP-Bench detecting real-world SDCs and Perf Throttling of GPUs.
