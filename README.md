@@ -69,8 +69,9 @@ You can find other examples in the run_model.sh script to generate reference log
 conda activate [your-env-name]
 ./run_model.sh -t 1800 -g h100_96GB
 ```
-    You can adjust the runtime of run_model.sh by providing -t option, and gpu type using -g option, e.g.,
+
 ```
+# You can adjust the runtime of run_model.sh by providing -t option, and gpu type using -g option, e.g.,
 # this will run 1 hour for distributed mode, and 1 hour for concurrent mode, for h100_80gb GPU
 ./run_model.sh -t 3600 -g h100_80gb
 ```
