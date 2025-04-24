@@ -52,32 +52,32 @@ cd CP-Bench
 
 1. You first need to generate a reference log file for the host/GPU you want to compare against. Because the checksum value could change with different envinroments, it is very important to run CP-Bench on a healthy host first to get a log file.
 
-For example, if you are checking H100_96GB GPU, then you can run
+    For example, if you are checking H100_96GB GPU, then you can run
 ```
-python run_benchmarks.py --mode distributed --batch_size 32 --models 'llama' --precision 'float32' --sdc_check 1 --random_seed 1 --duration 7200 --num_steps 1000000 | tee ref_h100_96gb_dist.txt.log
+python run_benchmarks.py --mode distributed --batch_size 32 --models 'llama' --precision 'float32' --sdc_check 1 --random_seed 1 --duration 7200 --num_steps 1000000 | tee ref_h100_96gb_dist.txt
 ```
-This will serve as your reference log file for H100_96GB GPU.
+This ref_h100_96gb_dist.txt will serve as your reference log file for H100_96GB GPU.
 Note, you might need to adjust parameters such as batch_size to avoid CUDA out of memory errors for different GPU types.
 
 You can find other examples in the run_model.sh script to generate reference log files for other GPU types.
 
 2. After you generating a reference log file, you can execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed).
 
-Very important: You need to modify the run_model.sh script to specify the reference log file you generated in step 1.
+    Very important: You need to modify run_model.sh script to specify the reference log file you generated in step 1.
 
 ```
 conda activate [your-env-name]
 ./run_model.sh -t 1800 -g h100_96GB
 ```
-You can adjust the runtime of run_model.sh by providing -t option, and gpu type using -g option, e.g.,
+    You can adjust the runtime of run_model.sh by providing -t option, and gpu type using -g option, e.g.,
 ```
-# this will run  hour for distributed mode, and 1 hour for concurrent mode, for h100_80gb GPU
+# this will run 1 hour for distributed mode, and 1 hour for concurrent mode, for h100_80gb GPU
 ./run_model.sh -t 3600 -g h100_80gb
 ```
 
 3. For more customized usage, you can modify the run_model.sh script to customize the benchmark parameters.
-For example, if you install transformer_engine, you can enable fp8 precision run, e.g., fp8_hybrid.
-Or, you can run the benchmark manually by executing the following commands:
+    For example, if you install transformer_engine, you can enable fp8 precision run, e.g., fp8_hybrid.
+    Or, you can run the benchmark manually by executing the following commands:
 ```
 # Concurrent mode: Each GPU run independently
 export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode concurrent --batch_size 28 --models "llama" --precision "float32" --sdc_check 1 --random_seed 1 --duration 10000 --num_steps 1000000 |tee run_concurrent.log
