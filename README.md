@@ -50,7 +50,7 @@ cd CP-Bench
 
 ## Running CP-Bench
 
-1. You first need to generate a reference log file for the host/GPU you want to compare against. Because the checksum value could change with different envinroments, it is very important to run CP-Bench on a healthy host first to get a log file.
+1. You first need to **generate a reference log file** for the host/GPU you want to compare against. Because the checksum value could change with different envinroments, it is very important to run CP-Bench on a healthy host first to get a log file.
 
     For example, if you are checking H100_96GB GPU, then you can run
 ```
