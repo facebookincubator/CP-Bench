@@ -63,7 +63,7 @@ You can find other examples in the run_model.sh script to generate reference log
 
 2. After you generating a reference log file, you can execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed).
 
-    Very important: You need to modify run_model.sh script to specify the reference log file you generated in step 1.
+    Important: You need to modify run_model.sh script to specify the reference log file you generated in step 1.
 
 ```
 conda activate [your-env-name]
