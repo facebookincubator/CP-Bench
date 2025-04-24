@@ -76,7 +76,7 @@ You can adjust the runtime of run_model.sh by providing -t option, and gpu type 
 ```
 
 3. For more customized usage, you can modify the run_model.sh script to customize the benchmark parameters.
-
+For example, if you install transformer_engine, you can enable fp8 precision run, e.g., fp8_hybrid.
 Or, you can run the benchmark manually by executing the following commands:
 ```
 # Concurrent mode: Each GPU run independently
