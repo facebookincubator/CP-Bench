@@ -50,23 +50,32 @@ cd CP-Bench
 
 ## Running CP-Bench
 
-For a quick run, activate your conda environment and execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed).
+1. You first need to generate a reference log file for the host/GPU you want to compare against. Because the checksum value could change with different envinroments, it is very important to run CP-Bench on a healthy host first to get a log file.
 
-Note, you might've installed different versions of PyTorch or CUDA, so the ref log to compare against distributed SDC checking is not applicable to your case.
+For example, if you are checking H100_96GB GPU, then you can run
+```
+python run_benchmarks.py --mode distributed --batch_size 32 --models 'llama' --precision 'float32' --sdc_check 1 --random_seed 1 --duration 7200 --num_steps 1000000 | tee ref_h100_96gb_dist.txt.log
+```
+This will serve as your reference log file for H100_96GB GPU.
+Note, you might need to adjust parameters such as batch_size to avoid CUDA out of memory errors for different GPU types.
 
-Note, you need to adjust parameters such as batch_size to avoid CUDA out of memory errors.
+You can find other examples in the run_model.sh script to generate reference log files for other GPU types.
+
+2. After you generating a reference log file, you can execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed).
+
+Very important: You need to modify the run_model.sh script to specify the reference log file you generated in step 1.
 
 ```
 conda activate [your-env-name]
-./run_model.sh
+./run_model.sh -t 1800 -g h100_96GB
 ```
-You can adjust the runtime of run_model.sh by providing -t option, e.g.,
+You can adjust the runtime of run_model.sh by providing -t option, and gpu type using -g option, e.g.,
 ```
-# this will run 1 hour for distributed mode, and 1 hour for concurrent mode
-./run_model.sh -t 3600
+# this will run  hour for distributed mode, and 1 hour for concurrent mode, for h100_80gb GPU
+./run_model.sh -t 3600 -g h100_80gb
 ```
 
-For more customized usage, you can modify the run_model.sh script to customize the benchmark parameters.
+3. For more customized usage, you can modify the run_model.sh script to customize the benchmark parameters.
 
 Or, you can run the benchmark manually by executing the following commands:
 ```
