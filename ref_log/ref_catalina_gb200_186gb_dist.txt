@@ -1,0 +1,162 @@
+Running llama with batch size of 64 and precision of float32 for distributed training for a lesser of 3600 seconds or 1000000 steps
+gpu_device:  0
+Distributed Training
+[2025-04-15 18:02:48,478 masked_host_name.facebook.com:2355271][model_base.py:239][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-04-15 18:02:48,478 masked_host_name.facebook.com:2355271][pytorch_base.py:101][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+gpu_device:  0
+Distributed Training
+[2025-04-15 18:02:48,492 masked_host_name.facebook.com:2355272][model_base.py:239][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-04-15 18:02:48,492 masked_host_name.facebook.com:2355272][pytorch_base.py:101][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  Starting to train ...
+  Starting to train ...
+[2025-04-15 18:03:55,794 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 100: 87846.89465537295 at GPU rank 0
+[2025-04-15 18:03:55,796 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 100: 87846.89465537295 at GPU rank 0
+[2025-04-15 18:04:45,644 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 200: 87848.27295903116 at GPU rank 0
+[2025-04-15 18:04:45,646 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 200: 87848.27295903116 at GPU rank 0
+[2025-04-15 18:05:36,442 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 300: 87852.82533413172 at GPU rank 0
+[2025-04-15 18:05:36,444 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 300: 87852.82533413172 at GPU rank 0
+[2025-04-15 18:06:27,052 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 400: 87854.79127562791 at GPU rank 0
+[2025-04-15 18:06:27,053 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 400: 87854.79127562791 at GPU rank 0
+[2025-04-15 18:07:17,285 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 500: 87854.99098953977 at GPU rank 0
+[2025-04-15 18:07:17,285 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 500: 87854.99098953977 at GPU rank 0
+[2025-04-15 18:08:07,691 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 600: 87853.29044545814 at GPU rank 0
+[2025-04-15 18:08:07,695 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 600: 87853.29044545814 at GPU rank 0
+[2025-04-15 18:08:58,122 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 700: 87856.38459320739 at GPU rank 0
+[2025-04-15 18:08:58,124 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 700: 87856.38459320739 at GPU rank 0
+[2025-04-15 18:09:48,184 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 800: 87854.51282583922 at GPU rank 0
+[2025-04-15 18:09:48,187 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 800: 87854.51282583922 at GPU rank 0
+[2025-04-15 18:10:38,797 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 900: 87855.42412409186 at GPU rank 0
+[2025-04-15 18:10:38,799 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 900: 87855.42412409186 at GPU rank 0
+[2025-04-15 18:11:28,726 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1000: 87854.89733369648 at GPU rank 0
+[2025-04-15 18:11:28,727 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1000: 87854.89733369648 at GPU rank 0
+[2025-04-15 18:12:19,013 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1100: 87850.6688150391 at GPU rank 0
+[2025-04-15 18:12:19,014 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1100: 87850.6688150391 at GPU rank 0
+[2025-04-15 18:13:09,330 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1200: 87848.6449007839 at GPU rank 0
+[2025-04-15 18:13:09,331 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1200: 87848.6449007839 at GPU rank 0
+[2025-04-15 18:14:00,362 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1300: 87846.74898235127 at GPU rank 0
+[2025-04-15 18:14:00,375 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1300: 87846.74898235127 at GPU rank 0
+[2025-04-15 18:14:50,457 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1400: 87843.27360258996 at GPU rank 0
+[2025-04-15 18:14:50,457 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1400: 87843.27360258996 at GPU rank 0
+[2025-04-15 18:15:41,027 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1500: 87840.38816561922 at GPU rank 0
+[2025-04-15 18:15:41,027 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1500: 87840.38816561922 at GPU rank 0
+[2025-04-15 18:16:32,056 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1600: 87838.96296776831 at GPU rank 0
+[2025-04-15 18:16:32,056 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1600: 87838.96296776831 at GPU rank 0
+[2025-04-15 18:17:22,444 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1700: 87838.42384175956 at GPU rank 0
+[2025-04-15 18:17:22,448 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1700: 87838.42384175956 at GPU rank 0
+[2025-04-15 18:18:13,017 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1800: 87836.34735613316 at GPU rank 0
+[2025-04-15 18:18:13,017 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1800: 87836.34735613316 at GPU rank 0
+[2025-04-15 18:19:03,685 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 1900: 87836.58173896 at GPU rank 0
+[2025-04-15 18:19:03,686 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 1900: 87836.58173896 at GPU rank 0
+[2025-04-15 18:19:53,901 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2000: 87836.26177809387 at GPU rank 0
+[2025-04-15 18:19:53,903 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2000: 87836.26177809387 at GPU rank 0
+[2025-04-15 18:20:44,283 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2100: 87836.29146113992 at GPU rank 0
+[2025-04-15 18:20:44,284 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2100: 87836.29146113992 at GPU rank 0
+[2025-04-15 18:21:34,680 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2200: 87835.7307555601 at GPU rank 0
+[2025-04-15 18:21:34,680 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2200: 87835.7307555601 at GPU rank 0
+[2025-04-15 18:22:24,737 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2300: 87835.2993094176 at GPU rank 0
+[2025-04-15 18:22:24,741 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2300: 87835.2993094176 at GPU rank 0
+[2025-04-15 18:23:14,961 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2400: 87833.99227813631 at GPU rank 0
+[2025-04-15 18:23:14,962 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2400: 87833.99227813631 at GPU rank 0
+[2025-04-15 18:24:05,799 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2500: 87833.33105487376 at GPU rank 0
+[2025-04-15 18:24:05,800 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2500: 87833.33105487376 at GPU rank 0
+[2025-04-15 18:24:55,859 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2600: 87831.5768244192 at GPU rank 0
+[2025-04-15 18:24:55,861 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2600: 87831.5768244192 at GPU rank 0
+[2025-04-15 18:25:46,424 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2700: 87830.02942198515 at GPU rank 0
+[2025-04-15 18:25:46,426 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2700: 87830.02942198515 at GPU rank 0
+[2025-04-15 18:26:36,674 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2800: 87827.35397472233 at GPU rank 0
+[2025-04-15 18:26:36,675 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2800: 87827.35397472233 at GPU rank 0
+[2025-04-15 18:27:26,932 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 2900: 87827.89366009831 at GPU rank 0
+[2025-04-15 18:27:26,955 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 2900: 87827.89366009831 at GPU rank 0
+[2025-04-15 18:28:17,906 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3000: 87824.26813105494 at GPU rank 0
+[2025-04-15 18:28:17,907 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3000: 87824.26813105494 at GPU rank 0
+[2025-04-15 18:29:08,634 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3100: 87826.31556513906 at GPU rank 0
+[2025-04-15 18:29:08,636 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3100: 87826.31556513906 at GPU rank 0
+[2025-04-15 18:29:58,679 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3200: 87830.72732719779 at GPU rank 0
+[2025-04-15 18:29:58,681 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3200: 87830.72732719779 at GPU rank 0
+[2025-04-15 18:30:49,320 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3300: 87830.91800633818 at GPU rank 0
+[2025-04-15 18:30:49,322 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3300: 87830.91800633818 at GPU rank 0
+[2025-04-15 18:31:40,083 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3400: 87829.43256638944 at GPU rank 0
+[2025-04-15 18:31:40,084 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3400: 87829.43256638944 at GPU rank 0
+[2025-04-15 18:32:31,680 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3500: 87827.25337177515 at GPU rank 0
+[2025-04-15 18:32:31,682 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3500: 87827.25337177515 at GPU rank 0
+[2025-04-15 18:33:22,469 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3600: 87825.01710816473 at GPU rank 0
+[2025-04-15 18:33:22,471 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3600: 87825.01710816473 at GPU rank 0
+[2025-04-15 18:34:13,043 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3700: 87823.33979082853 at GPU rank 0
+[2025-04-15 18:34:13,044 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3700: 87823.33979082853 at GPU rank 0
+[2025-04-15 18:35:04,287 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3800: 87822.36942784488 at GPU rank 0
+[2025-04-15 18:35:04,290 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3800: 87822.36942784488 at GPU rank 0
+[2025-04-15 18:35:55,482 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 3900: 87829.74267296493 at GPU rank 0
+[2025-04-15 18:35:55,483 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 3900: 87829.74267296493 at GPU rank 0
+[2025-04-15 18:36:46,599 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4000: 87834.07060918957 at GPU rank 0
+[2025-04-15 18:36:46,602 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4000: 87834.07060918957 at GPU rank 0
+[2025-04-15 18:37:37,599 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4100: 87835.14746236801 at GPU rank 0
+[2025-04-15 18:37:37,600 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4100: 87835.14746236801 at GPU rank 0
+[2025-04-15 18:38:28,175 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4200: 87835.11827564985 at GPU rank 0
+[2025-04-15 18:38:28,177 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4200: 87835.11827564985 at GPU rank 0
+[2025-04-15 18:39:19,061 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4300: 87834.99066031724 at GPU rank 0
+[2025-04-15 18:39:19,061 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4300: 87834.99066031724 at GPU rank 0
+[2025-04-15 18:40:09,455 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4400: 87833.7211547792 at GPU rank 0
+[2025-04-15 18:40:09,456 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4400: 87833.7211547792 at GPU rank 0
+[2025-04-15 18:41:00,100 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4500: 87835.99238540232 at GPU rank 0
+[2025-04-15 18:41:00,102 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4500: 87835.99238540232 at GPU rank 0
+[2025-04-15 18:41:50,227 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4600: 87839.11189419776 at GPU rank 0
+[2025-04-15 18:41:50,228 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4600: 87839.11189419776 at GPU rank 0
+[2025-04-15 18:42:40,990 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4700: 87838.09934861958 at GPU rank 0
+[2025-04-15 18:42:40,991 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4700: 87838.09934861958 at GPU rank 0
+[2025-04-15 18:43:31,526 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4800: 87837.30552320927 at GPU rank 0
+[2025-04-15 18:43:31,526 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4800: 87837.30552320927 at GPU rank 0
+[2025-04-15 18:44:22,649 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 4900: 87833.72270479798 at GPU rank 0
+[2025-04-15 18:44:22,650 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 4900: 87833.72270479798 at GPU rank 0
+[2025-04-15 18:45:13,260 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5000: 87834.68678862602 at GPU rank 0
+[2025-04-15 18:45:13,263 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5000: 87834.68678862602 at GPU rank 0
+[2025-04-15 18:46:04,053 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5100: 87833.46747276187 at GPU rank 0
+[2025-04-15 18:46:04,056 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5100: 87833.46747276187 at GPU rank 0
+[2025-04-15 18:46:54,820 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5200: 87835.64504484087 at GPU rank 0
+[2025-04-15 18:46:54,820 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5200: 87835.64504484087 at GPU rank 0
+[2025-04-15 18:47:45,141 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5300: 87835.99142015725 at GPU rank 0
+[2025-04-15 18:47:45,141 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5300: 87835.99142015725 at GPU rank 0
+[2025-04-15 18:48:35,936 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5400: 87833.2552510947 at GPU rank 0
+[2025-04-15 18:48:35,937 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5400: 87833.2552510947 at GPU rank 0
+[2025-04-15 18:49:26,971 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5500: 87814.0925128907 at GPU rank 0
+[2025-04-15 18:49:26,971 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5500: 87814.0925128907 at GPU rank 0
+[2025-04-15 18:50:17,992 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5600: 87811.6367963031 at GPU rank 0
+[2025-04-15 18:50:17,993 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5600: 87811.6367963031 at GPU rank 0
+[2025-04-15 18:51:08,562 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5700: 87812.29099624604 at GPU rank 0
+[2025-04-15 18:51:08,563 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5700: 87812.29099624604 at GPU rank 0
+[2025-04-15 18:51:59,240 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5800: 87812.03977071494 at GPU rank 0
+[2025-04-15 18:51:59,244 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5800: 87812.03977071494 at GPU rank 0
+[2025-04-15 18:52:50,022 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 5900: 87811.80443038046 at GPU rank 0
+[2025-04-15 18:52:50,022 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 5900: 87811.80443038046 at GPU rank 0
+[2025-04-15 18:53:40,613 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6000: 87812.10356078297 at GPU rank 0
+[2025-04-15 18:53:40,616 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6000: 87812.10356078297 at GPU rank 0
+[2025-04-15 18:54:31,730 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6100: 87809.86328576505 at GPU rank 0
+[2025-04-15 18:54:31,733 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6100: 87809.86328576505 at GPU rank 0
+[2025-04-15 18:55:21,939 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6200: 87809.18602903932 at GPU rank 0
+[2025-04-15 18:55:21,939 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6200: 87809.18602903932 at GPU rank 0
+[2025-04-15 18:56:12,593 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6300: 87809.3372752592 at GPU rank 0
+[2025-04-15 18:56:12,596 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6300: 87809.3372752592 at GPU rank 0
+[2025-04-15 18:57:03,159 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6400: 87809.79062569141 at GPU rank 0
+[2025-04-15 18:57:03,177 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6400: 87809.79062569141 at GPU rank 0
+[2025-04-15 18:57:53,695 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6500: 87828.42023867369 at GPU rank 0
+[2025-04-15 18:57:53,702 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6500: 87828.42023867369 at GPU rank 0
+[2025-04-15 18:58:44,871 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6600: 87812.44588863105 at GPU rank 0
+[2025-04-15 18:58:44,872 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6600: 87812.44588863105 at GPU rank 0
+[2025-04-15 18:59:35,044 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6700: 87803.87317669392 at GPU rank 0
+[2025-04-15 18:59:35,045 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6700: 87803.87317669392 at GPU rank 0
+[2025-04-15 19:00:25,529 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6800: 87798.66070723534 at GPU rank 0
+[2025-04-15 19:00:25,530 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6800: 87798.66070723534 at GPU rank 0
+[2025-04-15 19:01:16,034 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 6900: 87797.0886368528 at GPU rank 0
+[2025-04-15 19:01:16,034 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 6900: 87797.0886368528 at GPU rank 0
+[2025-04-15 19:02:06,604 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 7000: 87796.70539810508 at GPU rank 0
+[2025-04-15 19:02:06,608 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 7000: 87796.70539810508 at GPU rank 0
+[2025-04-15 19:02:56,946 masked_host_name.facebook.com:2355272][pytorch_llama.py:235][INFO] Checksum at step 7100: 87793.91120677441 at GPU rank 0
+[2025-04-15 19:02:56,950 masked_host_name.facebook.com:2355271][pytorch_llama.py:235][INFO] Checksum at step 7100: 87793.91120677441 at GPU rank 0
+[2025-04-15 19:02:56,975 masked_host_name.facebook.com:2355272][model_base.py:325][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 503.182669 ms.
+[2025-04-15 19:02:56,980 masked_host_name.facebook.com:2355271][model_base.py:325][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 503.182669 ms.
+[2025-04-15 19:02:57,470 masked_host_name.facebook.com:2355271][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0], 'fp32_train_step_time': [503.1826687273421], 'fp32_train_throughput': [127.29977025902741]}
+[2025-04-15 19:02:57,663 masked_host_name.facebook.com:2355272][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+All tasks are completed.

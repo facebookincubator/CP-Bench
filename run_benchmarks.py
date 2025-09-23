@@ -127,6 +127,11 @@ def _validate_dist_args(ctx, param, value):
     default=7,
     help="Ending GPU device number (only for sequential/concurrent mode).",
 )
+@click.option(
+    "--nproc_per_node",
+    default=8,
+    help="number of GPUs in the node (for distributed run).",
+)
 @click.option("--run-count", default=1, help="Number of runs per GPU device.")
 @click.option("--duration", default=120, help="Number of seconds to run.")
 @click.option("--sample_count", default=1024, help="Number of data samples.")
@@ -174,6 +179,7 @@ def run_benchmarks(
     random_seed,
     monitoring_enabled,
     monitoring_interval,
+    nproc_per_node,
 ):
     """Run specified benchmarks on multiple GPU devices either concurrently, distributedly, or sequentially."""
     AcceleratorVendor.set(accelerator_vendor)
@@ -257,7 +263,7 @@ def run_benchmarks(
                         "torchrun",
                         "--nnodes",
                         str(nnodes),
-                        "--nproc_per_node=8",
+                        f"--nproc_per_node={nproc_per_node}",
                         "--rdzv_backend",
                         rdzv_backend,
                         "--rdzv_endpoint",
