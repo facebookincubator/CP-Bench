@@ -17,7 +17,7 @@ def is_thruput_within_percentage(value, target, percentage_threshold):
 
 def check_if_distributed_stress_testing_pass(lines):
     """Check if distributed stress testing pass."""
-    
+
     print(
         "---- Stress test looks at the functional reliability, hard crash errors, etc, e.g., CUDA IMA, HBM uncorrectable error, etc -------"
     )
@@ -36,7 +36,7 @@ def check_if_distributed_stress_testing_pass(lines):
 
 def check_if_concurrent_stress_testing_pass(lines):
     """Check if concurrent stress testing pass."""
-    
+
     all_return_codes_zero = True
     for line in lines:
         if "return code: 0" not in line and "return code:" in line:
@@ -54,7 +54,7 @@ def check_if_distributed_perf_pass(lines, target_step_time, percentage_threshold
     """Check if distributed performance pass by comparing against a golden reference."""
 
     print(
-        "----- Perf test looks at step time (defined as time need to finish a single step, i.e., how fast does it train, on this given model) -----"
+        "----- Perf test looks at step time (defined as time (us) need to finish a single step, i.e., how fast does it train, on this given model) -----"
     )
     pattern = re.compile(
         r"gpu_device: distributed, return code: (\d+), result: \{'return_code': \[(\d+)\], 'fp32_train_step_time': \[([\d.]+)\], 'fp32_train_throughput': \[([\d.]+)\]\}"
