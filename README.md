@@ -50,7 +50,9 @@ cd CP-Bench
 
 ## Running CP-Bench
 
-1. You first need to **generate a reference log file** for the host/GPU you want to compare against. Because the checksum value could change with different envinroments, it is very important to run CP-Bench on a healthy host first to get a log file.
+# Method 1 
+Use run_model.sh
+(Optional) If you want to run sdc (silent data corruption) check, you first need to **generate a reference log file** for the host/GPU you want to compare against. Because the checksum value could change with different envinroments, it is very important to run CP-Bench on a healthy host first to get a log file.
 
     For example, if you are checking H100_96GB GPU, then you can run
 ```
@@ -61,12 +63,12 @@ Note, you might need to adjust parameters such as batch_size to avoid CUDA out o
 
 You can find other examples in the run_model.sh script to generate reference log files for other GPU types.
 
-2. After you generating a reference log file, you can execute the run_model.sh script (note this scripts currently supports 4 GPU types, make adjustments if needed).
+After you generating a reference log file, you can execute the run_model.sh script (note this scripts currently supports 4 GPU types and enable sdc check by default, make adjustments if needed).
 
     Important: You need to modify run_model.sh script to specify the reference log file you generated in step 1.
 
 ```
-conda activate [your-env-name]
+conda activate [your-env-name] (or source /conda/bin/activate if you use pre-compiled conda Env) 
 ./run_model.sh -t 1800 -g h100_96GB
 ```
 
@@ -75,10 +77,11 @@ conda activate [your-env-name]
 # this will run 1 hour for distributed mode, and 1 hour for concurrent mode, for h100_80gb GPU
 ./run_model.sh -t 3600 -g h100_80gb
 ```
+For more customized usage, you can modify the run_model.sh script to customize the benchmark parameters.
+For example, if you install transformer_engine, you can enable fp8 precision run, e.g., fp8_hybrid.
 
-3. For more customized usage, you can modify the run_model.sh script to customize the benchmark parameters.
-    For example, if you install transformer_engine, you can enable fp8 precision run, e.g., fp8_hybrid.
-    Or, you can run the benchmark manually by executing the following commands:
+# Method 2 
+You can run the benchmark manually by executing the following commands:
 ```
 # Concurrent mode: Each GPU run independently
 export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode concurrent --batch_size 28 --models "llama" --precision "float32" --sdc_check 1 --random_seed 1 --duration 10000 --num_steps 1000000 |tee run_concurrent.log
@@ -87,6 +90,10 @@ export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode concur
 ```
 # Distributed mode: All GPUs run together for one model.
 export NCCL_DEBUG=0 && export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benchmarks.py --mode distributed --batch_size 24 --models "llama" --precision "float32" --sdc_check 1 --random_seed 1 --duration 10000 --num_steps 1000000 |tee run_distributed_llama.log
+```
+
+```
+./run_dlrm.sh -t 300 -b 20480 -n 2 
 ```
 
 ## Real-World Use Cases
