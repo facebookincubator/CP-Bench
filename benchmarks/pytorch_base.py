@@ -9,7 +9,14 @@ import time
 from datetime import timedelta
 
 import torch
-import transformers
+
+try:
+    from torch.optim import AdamW
+except ImportError:
+    try:
+        from transformers.optimization import AdamW
+    except ImportError:
+        from transformers import AdamW
 
 try:
     import transformer_engine.pytorch as te
@@ -252,7 +259,7 @@ class PytorchBase(ModelBenchmark):
                     self._model.parameters(), lr=1e-4, betas=(0.9, 0.999), eps=1e-05
                 )
             elif self._optimizer_type == Optimizer.ADAMW:
-                self._optimizer = transformers.AdamW(
+                self._optimizer = AdamW(
                     self._model.parameters(), lr=1e-4, betas=(0.9, 0.999), eps=1e-05
                 )
             else:
@@ -271,7 +278,7 @@ class PytorchBase(ModelBenchmark):
                     self._model.parameters(), lr=1e-5, betas=(0.9, 0.999), eps=1e-08
                 )
             elif self._optimizer_type == Optimizer.ADAMW:
-                self._optimizer = transformers.AdamW(
+                self._optimizer = AdamW(
                     self._model.parameters(), lr=1e-5, betas=(0.9, 0.999), eps=1e-08
                 )
             else:
