@@ -1,3 +1,5 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
 #!/bin/bash
 export NCCL_DEBUG=0
 # Get the current working directory
