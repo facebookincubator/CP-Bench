@@ -1,0 +1,206 @@
+Running llama with batch size of 72 and precision of float32 for distributed training for a lesser of 3600 seconds or 1000000 steps
+W1008 17:34:06.439000 128026 site-packages/torch/distributed/run.py:792]
+W1008 17:34:06.439000 128026 site-packages/torch/distributed/run.py:792] *****************************************
+W1008 17:34:06.439000 128026 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+W1008 17:34:06.439000 128026 site-packages/torch/distributed/run.py:792] *****************************************
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+gpu_device:  0
+Distributed Training
+[2025-10-08 17:34:09,167 masked_host_name.prn3.facebook.com:128119][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,167 masked_host_name.prn3.facebook.com:128119][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+[2025-10-08 17:34:09,197 masked_host_name.prn3.facebook.com:128118][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,197 masked_host_name.prn3.facebook.com:128118][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+[2025-10-08 17:34:09,215 masked_host_name.prn3.facebook.com:128115][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,215 masked_host_name.prn3.facebook.com:128115][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+[2025-10-08 17:34:09,221 masked_host_name.prn3.facebook.com:128112][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,222 masked_host_name.prn3.facebook.com:128112][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+[2025-10-08 17:34:09,227 masked_host_name.prn3.facebook.com:128113][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,228 masked_host_name.prn3.facebook.com:128113][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+  LlamaBenchmarkModel creating...
+[2025-10-08 17:34:09,239 masked_host_name.prn3.facebook.com:128114][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,240 masked_host_name.prn3.facebook.com:128114][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+[2025-10-08 17:34:09,241 masked_host_name.prn3.facebook.com:128116][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,241 masked_host_name.prn3.facebook.com:128116][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel creating...
+[2025-10-08 17:34:09,262 masked_host_name.prn3.facebook.com:128117][model_base.py:240][INFO] Model placement - model: pytorch-llama-large, GPU availablility: True, pin memory: False, force fp32: False.
+[2025-10-08 17:34:09,262 masked_host_name.prn3.facebook.com:128117][pytorch_base.py:104][INFO] Distributed training is enabled - model: pytorch-llama-large, distributed implementation: ddp.
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel creating...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+  LlamaBenchmarkModel will be created in cuda ...
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  Starting to train ...
+  Starting to train ...
+  Starting to train ...
+  Starting to train ...
+  Starting to train ...
+  Starting to train ...
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/root/todel/conda/lib/python3.13/site-packages/transformers/optimization.py:640: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  Starting to train ...
+  Starting to train ...
+[2025-10-08 17:39:21,156 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,157 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,157 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,157 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,157 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,157 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,157 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:39:21,161 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 100: 87849.3698939383 at GPU rank 0
+[2025-10-08 17:44:10,462 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,462 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,462 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,462 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,463 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,463 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,463 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:44:10,468 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 200: 87849.07307861 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,217 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:49:00,221 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 300: 87849.79277247936 at GPU rank 0
+[2025-10-08 17:53:49,593 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,593 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,593 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,593 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,594 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,594 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,594 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:53:49,598 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 400: 87853.48457887769 at GPU rank 0
+[2025-10-08 17:58:38,768 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,768 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,768 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,768 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,768 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,768 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,770 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 17:58:38,773 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 500: 87855.38951656222 at GPU rank 0
+[2025-10-08 18:03:25,070 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,070 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,070 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,071 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,071 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,071 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,071 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:03:25,074 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 600: 87857.69163870066 at GPU rank 0
+[2025-10-08 18:08:14,000 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,000 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,001 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,001 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,001 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,001 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,001 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:08:14,004 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 700: 87859.33703943342 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,983 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:13:02,988 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 800: 87860.88664448261 at GPU rank 0
+[2025-10-08 18:17:51,914 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,915 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,915 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,915 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,915 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,915 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,915 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:17:51,919 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 900: 87861.24337161332 at GPU rank 0
+[2025-10-08 18:22:40,839 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,839 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,839 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,839 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,839 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,840 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,840 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:22:40,844 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 1000: 87860.99900436401 at GPU rank 0
+[2025-10-08 18:27:29,807 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,807 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,808 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,808 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,808 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,808 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,808 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:27:29,812 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 1100: 87860.96355407685 at GPU rank 0
+[2025-10-08 18:32:16,443 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,443 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,443 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,444 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,444 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,444 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,445 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:32:16,449 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 1200: 87860.44793408364 at GPU rank 0
+[2025-10-08 18:37:05,923 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,924 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,924 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,924 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,924 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,924 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,924 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:05,928 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:237][INFO] Checksum at step 1300: 87860.53701233864 at GPU rank 0
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128117][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128115][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128113][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128119][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128116][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128114][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128117][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128115][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128118][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128113][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128119][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128114][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128116][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,469 masked_host_name.prn3.facebook.com:128112][model_base.py:326][INFO] Average train time - round: 0, model: pytorch-llama-large, precision: float32, step time: 2880.491371 ms.
+[2025-10-08 18:37:06,470 masked_host_name.prn3.facebook.com:128118][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:06,470 masked_host_name.prn3.facebook.com:128112][model_base.py:333][INFO] Train time statistics for GPU rank 0: mean: 2880.491371 ms, Top-5 worst step times: [5099.38818359375, 5083.42529296875, 5063.63671875, 5059.66943359375, 5044.705078125], 5th percentile: 2844.476831 ms, 20th percentile: 2856.497412 ms, 50th percentile (Median): 2864.075195 ms, 75th percentile: 2872.822217 ms, 95th percentile: 2882.012732 ms, total run steps: 1290.
+[2025-10-08 18:37:08,228 masked_host_name.prn3.facebook.com:128112][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0], 'fp32_train_step_time': [2880.4913712375846], 'fp32_train_throughput': [25.058581927848593]}
+[2025-10-08 18:37:08,259 masked_host_name.prn3.facebook.com:128116][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+[2025-10-08 18:37:08,391 masked_host_name.prn3.facebook.com:128113][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+[2025-10-08 18:37:08,972 masked_host_name.prn3.facebook.com:128117][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+[2025-10-08 18:37:09,242 masked_host_name.prn3.facebook.com:128114][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+[2025-10-08 18:37:09,283 masked_host_name.prn3.facebook.com:128119][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+[2025-10-08 18:37:09,312 masked_host_name.prn3.facebook.com:128118][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+[2025-10-08 18:37:09,360 masked_host_name.prn3.facebook.com:128115][pytorch_llama.py:126][INFO] benchmark: pytorch-llama-large, gpu_device: distributed, return code: 0, result: {'return_code': [0]}
+All tasks are completed.
