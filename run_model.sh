@@ -75,6 +75,15 @@ case $GPU_TYPE in
     CONCURRENT_TARGET_STEP_TIME=525
     REF_LOG_FILE=./ref_log/ref_catalina_gb200_186gb_dist.txt
     ;;
+  mi300_192gb)
+    NPROC_PER_NODE=8
+    END_GPU=7
+    BATCH_SIZE_DISTRIBUTED=72
+    BATCH_SIZE_CONCURRENT=72
+    DISTRIBUTED_TARGET_STEP_TIME=2880
+    CONCURRENT_TARGET_STEP_TIME=2850
+    REF_LOG_FILE=./ref_log/ref_cloudveil_mi300_192gb_dist.txt
+    ;;
   *)
     echo "Invalid GPU type"
     exit 1
