@@ -73,11 +73,14 @@ def _validate_dist_args(ctx, param, value):
     return value
 
 
-@click.command()
+@click.command(
+    context_settings={"ignore_unknown_options": True, "allow_extra_args": True}
+)
 @click.option(
     "--mode",
     type=click.Choice(["concurrent", "distributed", "sequential"]),
-    required=True,
+    default=None,
+    required=False,
     help="Mode to run the benchmarks: 'concurrent', 'distributed', 'sequential'.",
 )
 @click.option(
@@ -158,7 +161,16 @@ def _validate_dist_args(ctx, param, value):
     default="random",
     help='Comma-separated list of models to run (e.g., "alexnet,resnet,lstm,bert,gpt2,llama", or "random" which randomly select one model to run).',
 )
+@click.option(
+    "--test",
+    type=click.Choice(["model", "operator"]),
+    default="model",
+    help="Test type: 'model' runs training/inference benchmarks, "
+    "'operator' runs cross-GPU operator-level SDC detection.",
+)
+@click.pass_context
 def run_benchmarks(
+    ctx,
     mode,
     nnodes,
     rdzv_backend,
@@ -180,8 +192,19 @@ def run_benchmarks(
     monitoring_enabled,
     monitoring_interval,
     nproc_per_node,
+    test,
 ):
     """Run specified benchmarks on multiple GPU devices either concurrently, distributedly, or sequentially."""
+
+    if test == "operator":
+        import sys
+
+        from pytorch_op.main import main as op_main
+
+        sys.argv = [sys.argv[0]] + ctx.args
+        op_main()
+        return
+
     AcceleratorVendor.set(accelerator_vendor)
     monitor_executor = None
     stop_event = Event()
