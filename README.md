@@ -5,6 +5,7 @@ CP-Bench, stands for Configurable and Paramraterizable PyTorch-level Test Benchm
 ## Features
 
 * **GPU Silent Data Corruption Detection**: CP-Bench uses **PyTorch's deterministic running** to detect silent data corruption on GPUs, which can cause incorrect results without raising any hardware alerts.
+* **Operator-Level SDC Detection**: In addition to model-level testing, CP-Bench can run individual PyTorch operators (matmul, attention, normalization, etc.) and compare their outputs across GPUs to pinpoint which GPU is producing corrupt results.
 * **Different Running Modes**: CP-Bench supports distributed mode, as well as concurrent modes, to support SDC check across hosts and GPUs.
 * **Stress Testing**: The benchmark includes adaptive PyTorch workloads to stress test GPUs, identifying potential performance bottlenecks and stability issues.
 * **Measure Perf**: The benchmark also measures GPU performance.
@@ -94,6 +95,44 @@ export NCCL_DEBUG=0 && export CUBLAS_WORKSPACE_CONFIG=:4096:8 && python run_benc
 
 ```
 ./run_dlrm.sh -t 300 -b 20480 -n 2 
+```
+
+## Operator-Level SDC Detection
+
+Besides the model-level tests above, CP-Bench also provides an operator-level test that runs individual PyTorch operators (e.g., matmul, attention, normalization, convolution, backward pass) and compares their outputs across all GPUs on the host. Because every GPU runs the same operator with the same deterministic inputs, any disagreement points directly to the faulty GPU. This complements model-level testing by isolating SDC at the operator granularity.
+
+You can launch the operator-level test through the same entry point using the `--test operator` option:
+```
+python run_benchmarks.py --test operator --preset quick
+```
+
+The operator test supports three presets that trade off coverage for runtime:
+```
+# quick    : 1 iteration, all operators                 (~1-2 min)
+# standard : 3 iterations, all operators + pipelines    (~5 min)
+# thorough : 10 iterations + systematic HBM sweep       (~25-30 min)
+python run_benchmarks.py --test operator --preset standard
+```
+
+Useful options:
+```
+# Stop on the first failure
+python run_benchmarks.py --test operator --preset quick --fail-fast
+
+# Print full element-level detail on mismatches
+python run_benchmarks.py --test operator --preset quick --verbose
+
+# Cap the total runtime (hard stop, in seconds)
+python run_benchmarks.py --test operator --preset standard --duration-limit 120
+
+# List all registered operators
+python run_benchmarks.py --test operator --list-ops
+```
+
+A passing run reports that all GPUs agree, while a failure identifies the disagreeing GPU(s):
+```
+ALL CROSS-GPU TESTS PASSED - 85 comparisons across 8 GPUs in 57.3s
+Result: {'total_comparisons': 85, 'passed': 85, 'failed': 0}
 ```
 
 ## Real-World Use Cases
